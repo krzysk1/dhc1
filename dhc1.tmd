@@ -469,6 +469,10 @@
                 <[uint][Positions][41]>
                 <[float64][Value][1.0]>
             >
+            <[input_lever][CockpitInput][]
+                <[string8][Input][Controls.Gear]>
+                <[float64][Value][0.0]>	
+            >
             <[input_default][BrakeInput][]
                 <[string8][Input][Controls.WheelBrake]>
             >
@@ -656,12 +660,13 @@
                 <[float64array][InputPosition][ -1.0 1.0 ]>
                 <[float64array][OutputPosition][ 0.800 -0.800 ]>
             >
-            <[servolinear][ServoCanopy][]
-                <[string8][Input][AirspeedIndicator.IndicatedAirspeed]>
-                <[float64][OutputSpeed][0.4]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 1.0 2.0 ]>
-                <[float64array][OutputPosition][ 1.0 0.0 ]>
+            <[servoclassic][ServoCanopy][]
+                <[string8][Input][CockpitInput.Output]>
+                <[float64][Speed][0.500]>
+                <[float64][P0][0.0]>
+                <[float64][P1][1.0]>
+                <[float64][P2][0.0]>
+                <[float64][P3][0.0]>
             >
             <[output_free][ServoCanopyOutput][]
                 <[string8][Input][ServoCanopy.Output]>
