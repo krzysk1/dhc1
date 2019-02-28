@@ -695,14 +695,13 @@
                 <[float64array][InputPosition][ -1.0 1.0 ]>
                 <[float64array][OutputPosition][ 0.8 -0.8 ]>
             >
-            <[servoclassic][ServoCanopy][]
-            //    <[string8][Input][CockpitInput.Output]>
-                <[string8][Input][AirspeedIndicator.IndicatedAirspeed]>				
-                <[float64][Speed][0.5]>
-                <[float64][P0][0.0]>
-                <[float64][P1][1.0]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
+            <[servolinear][ServoCanopy][]
+			//    <[string8][Input][CockpitInput.Output]>
+                <[string8][Input][AirspeedIndicator.IndicatedAirspeed]>
+                <[float64][OutputSpeed][0.5]>
+                <[float64][Position][0.0]>
+                <[float64array][InputPosition][ 1.0 2.0 ]>
+                <[float64array][OutputPosition][ 1.0 0.0 ]>
             >
             <[output_free][ServoCanopyOutput][]
                 <[string8][Input][ServoCanopy.Output]>
