@@ -13,6 +13,9 @@ Installation:
 
 1. Unzip downloaded file and move the "dhc1" folder into C:\Users\~\Documents\Aerofly FS 2\aircraft.
 
+Tip:
+Canopy opens automatically when airspeed is zero. Use wheel brake to full stop.
+
 There are 2 extra liveries: WK518 - created by BARANGER Emmanuel, Adak47 - created by Krzysztof Kaniewski,
 
 Repaint kit and other resources are available here: https://github.com/FGMEMBERS/dhc1
