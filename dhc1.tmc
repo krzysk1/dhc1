@@ -4,7 +4,7 @@
         <[vec32array][ContactSpheres][ (0.8565 1.346 -1.1924 0.2207) (0.8565 -1.346 -1.1924 0.2207) (-4.4662 0.010 -0.4739 0.1434) ]>
 		<[string8][DisplayName][DHC-1 Chipmunk]>
 		<[string8][DescriptionTextEN][The de Havilland Canada DHC-1 Chipmunk is a tandem, two-seat, single-engined primary trainer aircraft which was the standard primary trainer for the Royal Canadian Air Force, Royal Air Force and several other air forces through much of the post-Second World War years. Today, over 500 DHC-1 Chipmunk airframes remain airworthy with more being rebuilt every year.
-		Converted from FlightGear by Krzysztof Kaniewski. Original 3D and YASim model by BARANGER Emmanuel.]>
+Converted from FlightGear by Krzysztof Kaniewski. Original 3D and YASim model by BARANGER Emmanuel.]>
 		<[float64][WingSpan][10.47]>
 		<[float64][Mass][688.1]>
 		<[float64][MaximumSpeed][77.5]>

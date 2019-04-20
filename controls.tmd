@@ -16,7 +16,22 @@
                 >
                 <[float64][Radius][0.006]>
                 <[float64][Length][0.015]>
-            >		
+            >
+			// compass adjust
+            <[control_cylinder][CompassAdjust][4]
+                <[float64][Type][knob]>
+                <[vector3_float64][R0][0.4968 0.0 0.364]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.CompassAdjust]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.004]>
+            >			
         >
     >
 >

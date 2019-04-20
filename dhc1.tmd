@@ -945,7 +945,18 @@
             <[output][LandingLightOn][]
                 <[string8][Input][LandingLightSwitch.Output]>
             >
-
+			
+            // navigation lights
+            <[input_switch][InstrumentsLightSwitch][]
+                <[string8][Input][Controls.Lighting.Instruments]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][0.0]>
+            >
+            <[output][InstrumentsLightOn][]
+                <[string8][Input][InstrumentsLightSwitch.Output]>
+            >
+			
             // external lighting end
 
 
@@ -1272,10 +1283,19 @@
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][-4.466 0 -0.474]>
             >
+            <[graphics_input][InstrumentsLightingInput][]
+                <[uint32][InputID][InstrumentsLightOn.Output]>
+                <[float64][Scaling][0.8]>
+            >
+            <[graphics_color][InstrumentsLighting][]
+                <[string8][Input][InstrumentsLightingInput.Output]>
+                <[tmvector3d][Color][ 0.1 0.83 0.6 ]>
+            >			
             <[rigidbodygraphics][Panel][]
                 <[string8][GeometryList][ panel  face fond visses vitre  aircraft cadran ai_face ai_fond ai_vitre  ballenclosure turn_face turn_fond turn_visses turn_vitre  button alt_face alt_fond alt_visses alt_vitre  dg_button dg_face dg_fond dg_vitre  vsi_face vsi_fond vsi_visses vsi_vitre ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>						
             >
             <[graphics_input][ASI_Input][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
@@ -1292,6 +1312,7 @@
                 <[string8][InputAngle][ASI_Mapping.Output]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][0.5045 0.1 0.511]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>						
             >
             <[hingedbodygraphics][alt_needle2][]
                 <[string8][GeometryList][ alt-needle2 ]>
@@ -1300,7 +1321,8 @@
                 <[uint32][AngleID][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][0.509 0.1 0.414]>
-                <[float64][AngleMax][0.020600]>
+                <[float64][AngleMax][0.0206]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[hingedbodygraphics][alt_needle1][]
                 <[string8][GeometryList][ alt-needle1 ]>
@@ -1309,7 +1331,8 @@
                 <[uint32][AngleID][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][0.509 0.1 0.414]>
-                <[float64][AngleMax][0.002060]>
+                <[float64][AngleMax][0.00206]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[hingedbodygraphics][alt_needle3][]
                 <[string8][GeometryList][alt-needle3 ]>
@@ -1319,6 +1342,7 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][0.509 0.1 0.414]>
                 <[float64][AngleMax][0.0206]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[graphics_input][alt_PressureInput][]
                 <[uint32][InputID][PressureSetting.Output]>
@@ -1335,6 +1359,7 @@
                 <[uint32][InputAngle][alt_PressureMapping.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.501 0.1 0.414]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[graphics_input][vsi_needleInput][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
@@ -1352,6 +1377,7 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.501 -0.1 0.414]>
                 <[tmvector3d][Pivot][0.5063 -0.1 0.414]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[hingedbodygraphics][AttitudeIndicator][]
                 <[string8][GeometryList][ rollptr ]>
@@ -1360,6 +1386,7 @@
                 <[uint32][AngleID][BankAngle.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.511 0 0.511]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[graphics_input][PitchInput][]
                 <[uint32][InputID][PitchAngle.Output]>
@@ -1387,10 +1414,12 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][BankRotate.Output]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[rigidbodygraphics][BalanceIndicatorBall][]
                 <[string8][GeometryList][ ball ]>
                 <[uint32][PositionID][BalanceIndicatorBall.R]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[hingedbodygraphics][turn_needle][]
                 <[string8][GeometryList][ turn_needle ]>
@@ -1400,11 +1429,13 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.5056 -0.1 0.511]>
                 <[float64][AngleMax][1]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
             <[rigidbodygraphics][MagneticCompassCard][]
                 <[string8][GeometryList][ compass ]>
                 <[uint32][PositionID][MagneticCompassCard.R]>
                 <[uint32][OrientationID][MagneticCompassCard.Q]>
+                <[string8][InputIllumination0][InstrumentsLighting.Output]>					
             >
         >
         <[pointer_list_tmsound][SoundObjects][]
