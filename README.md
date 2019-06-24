@@ -21,3 +21,5 @@ There are 2 extra liveries: WK518 - created by BARANGER Emmanuel, Adak47 - creat
 Repaint kit and other resources are available here: https://github.com/FGMEMBERS/dhc1
 
 Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/de-havilland-canada-dhc-1-chipmunk/177
+
+https://www.aopa.org/news-and-media/all-news/2003/june/pilot/de-havilland-dhc-1-chipmunk
